@@ -6,7 +6,7 @@ var stringify = t.stringify;
 var noobj = {};
 
 var ValidationError = t.struct({
-  message: t.String,
+  message: t.Any,
   actual: t.Any,
   expected: t.Any,
   path: t.list(t.union([t.String, t.Number]))
